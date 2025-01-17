@@ -1,0 +1,9 @@
+.cabecalho{
+    background-color: rgb(151, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 1.5em;
+}
+.logo{
+    width: 15%;
+}
