@@ -6,8 +6,8 @@ function ColunasTabela({id, descricao, data, kmrodado, valor}) {
             <th scope="row">{id}</th>
             <LinhasTabela dado={descricao} />
             <LinhasTabela dado={data} />
-            <LinhasTabela dado={kmrodado} />
-            <LinhasTabela dado={valor} />
+            <LinhasTabela dado={`${kmrodado} km`} />
+            <LinhasTabela dado={`R$${valor}`} />
         </tr>
     )
 }

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import style from "./Tabela.module.css";
+import style from "./TabelaEntradas.module.css";
 import ColunasTabela from "componentes/ColunasTabela";
-import { getEntradas } from "servicos/Entradas";
+import { getEntradas } from "Conexao/Entradas";
 
 function Tabela() {
 
@@ -24,19 +24,16 @@ function Tabela() {
                 <thead>
                     <tr>
                         <th scope="col">#</th>
+                        <th scope="col">Descrição</th>
                         <th scope="col">Data</th>
-                        <th scope="col">Ganhos</th>
-                        <th scope="col">Gastos</th>
-                        <th scope="col">Lucros</th>
+                        <th scope="col">Km rodado</th>
+                        <th scope="col">Valor Recebido</th>
                     </tr>
                 </thead>
                 <tbody> 
                     {entradas.map((entrada) => {
                         return <ColunasTabela {...entrada} key={entrada.id} />
-                    })}
-                    
-                    <ColunasTabela id="2" data="07/12/24" gasto="R$21.48" ganhos="R$174.20" lucro="R$152.72" />
-                    <ColunasTabela id="3" data="06/12/24" gasto="R$16.36" ganhos="R$118.87" lucro="R$102.51" />               
+                    })}               
                 </tbody>
             </table>
         </div>   

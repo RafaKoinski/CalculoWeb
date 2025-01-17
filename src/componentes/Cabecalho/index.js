@@ -6,9 +6,11 @@ import CabecalhoLink from "componentes/CabecalhoLink";
 function Cabecalho() {
     return(
         <header className={style.cabecalho}>
-            <Link to="./">
-                <img className={style.logo} src={logo} alt="Logo do sistema calculo"></img>
-            </Link>
+            <div>
+                <Link to="./">
+                    <img className={style.logo} src={logo} alt="Logo do sistema calculo"></img>
+                </Link>
+            </div>
             <nav>
                 <CabecalhoLink url="./">
                     Home
