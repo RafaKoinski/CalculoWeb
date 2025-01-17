@@ -27,7 +27,8 @@ function Tabela() {
                         <th scope="col">Descrição</th>
                         <th scope="col">Data</th>
                         <th scope="col">Km rodado</th>
-                        <th scope="col">Valor Recebido</th>
+                        <th scope="col">Valor</th>
+                        <th scope="col">Ações</th>
                     </tr>
                 </thead>
                 <tbody> 

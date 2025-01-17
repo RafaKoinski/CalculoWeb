@@ -1,0 +1,13 @@
+
+.acao{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+}
+.link{
+    margin-left: 0.2em;
+    color: #fff;
+}
+.icone{
+    width: 60%;
+}

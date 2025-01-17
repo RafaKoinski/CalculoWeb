@@ -1,3 +1,4 @@
+import AcaoTabela from "componentes/AcaoTabela";
 import LinhasTabela from "componentes/LinhasTabela";
 
 function ColunasTabela({id, descricao, data, kmrodado, valor}) {
@@ -8,6 +9,7 @@ function ColunasTabela({id, descricao, data, kmrodado, valor}) {
             <LinhasTabela dado={data} />
             <LinhasTabela dado={`${kmrodado} km`} />
             <LinhasTabela dado={`R$${valor}`} />
+            <AcaoTabela />
         </tr>
     )
 }
