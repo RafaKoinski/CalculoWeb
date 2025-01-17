@@ -8,6 +8,10 @@
     margin-left: 0.2em;
     color: #fff;
 }
+.link:hover{
+    margin-left: 0.2em;
+    color: #dadada;
+}
 .icone{
     width: 60%;
 }
